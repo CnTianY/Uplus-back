@@ -56,6 +56,14 @@ module.exports = appInfo => {
     data: 'midPayload',
   };
 
+  config.cluster = {
+    listen: {
+      path: '',
+      port: 7001,
+      hostname: '127.0.0.1',
+    },
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
